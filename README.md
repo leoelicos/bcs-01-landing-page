@@ -24,6 +24,8 @@ Screenshot:
 Landing Page
 ![Images](./assets/images/landing-page.jpg)
 
+![Images](./assets/images/landing-page-2.jpg)
+
 Popup Modal
 ![Images](./assets/images/landing-page-popup-modal.jpg)
 
