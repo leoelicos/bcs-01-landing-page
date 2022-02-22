@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 body {
-	max-width: 800px;
+	max-width: 991px;
 	font-family: 'Muli', sans-serif;
 	height: 100vh;
 	width: 100vw;
@@ -19,7 +19,7 @@ header {
 	position: fixed;
 	top: 0;
 	display: flex;
-	padding: 0 max(5vw, calc(5vw + (90vw - 800px) / 2));
+	padding: 0 max(5vw, calc(5vw + (90vw - 991px) / 2));
 	width: 100%;
 	margin: 0 auto;
 	justify-content: space-between;
@@ -129,6 +129,7 @@ a:active {
 
 .portfolios {
 	width: 90vw;
+
 	margin: 0 auto;
 	margin-bottom: 100px;
 	display: flex;
@@ -211,6 +212,21 @@ a:active {
 	width: 100%;
 	height: 100%;
 }
+
+.portfolios-footer {
+	flex: 1;
+	position: relative;
+
+	color: #e0e0e0;
+	font-size: 24px;
+	text-align: center;
+	margin: 30px 0;
+	margin-bottom: 100px;
+	border-bottom: 1px solid white;
+	padding: 10px;
+	width: 100vw;
+}
+
 .bg-modal {
 	width: 100%;
 	height: 100%;
@@ -269,7 +285,7 @@ input {
 	section.portfolios {
 		width: 90vw;
 	}
-	article.portfolio {
+	a.portfolio {
 		width: 40vw;
 	}
 }
@@ -277,7 +293,7 @@ input {
 	section.portfolios {
 		width: 90vw;
 	}
-	article.portfolio {
+	a.portfolio {
 		width: 80vw;
 	}
 }
