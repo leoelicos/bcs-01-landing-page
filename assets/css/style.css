@@ -114,86 +114,102 @@ li {
 	padding: 6px;
 }
 
-li a {
+a {
 	text-decoration: none;
 	color: black;
 }
 
-li a:active {
-	text-decoration: underline;
-	text-decoration-color: black;
-}
-
-li a:hover,
-li a:visited,
-li a:active {
-	text-decoration: underline;
+a:active,
+a:hover,
+a:visited,
+a:active {
+	text-decoration: none;
 	text-decoration-color: none;
 }
 
-.portfolio-of-work {
-	max-width: 800px;
-	margin-bottom: 100px;
-
-	position: relative;
-
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.portfolio-of-work h3 {
-	flex: 1;
-	color: black;
-	font-size: 30px;
-	margin: 40px 0;
-}
 .portfolios {
-	flex: 1;
+	width: 90vw;
+	margin: 0 auto;
+	margin-bottom: 100px;
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
-	justify-items: stretch;
-
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
 }
+
+.portfolios-header {
+	flex: 1;
+	position: relative;
+
+	color: #e0e0e0;
+	font-size: 24px;
+	text-align: center;
+	margin: 30px 0;
+
+	border-bottom: 1px solid white;
+	padding: 10px;
+	width: 100vw;
+}
+
 .portfolio {
-	height: 300px;
-	width: 230px;
+	width: 28vw;
 	border: 1px solid darkgray;
 	border-radius: 3px;
-	margin: 10px;
+	margin: 20px 0;
 	padding: 5px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: stretch;
 	justify-items: stretch;
 	background-color: #977e7e;
 }
+
 .portfolio-header {
 	flex: 1;
-	color: #e0e0e0;
-	font-size: 24px;
-	text-align: center;
+
+	position: relative;
+	margin-top: -20px;
+	border: 1px solid gray;
+	border-radius: 8px;
+	transition: all 0.5s ease-in;
+
+	padding: 3px 5px;
+	background-color: #977e7e;
+	color: white;
+	font-size: 20px;
+}
+
+.portfolio .portfolio-header {
+	border-radius: 8px;
+	transition: all 0.5s ease-in-out;
+}
+.portfolio:hover {
+	box-shadow: inset 0px 0px 2px rgb(255, 255, 255), 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.portfolio:hover {
+	cursor: pointer;
 }
 
 .portfolio-text {
 	flex: 1;
-	color: darkred;
+	color: #e0e0e0;
 	font-size: 12px;
 	text-align: center;
+	margin: 10px 0;
 }
 
 .portfolio-image {
 	flex: 5;
-}
-.portfolio-image img {
+	padding: 4px;
+	border-radius: 8px;
+
 	object-fit: cover;
+
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
 }
 .bg-modal {
 	width: 100%;
@@ -247,4 +263,21 @@ input {
 }
 .btn:focus {
 	outline: 0;
+}
+
+@media screen and (max-width: 991px) {
+	section.portfolios {
+		width: 90vw;
+	}
+	article.portfolio {
+		width: 40vw;
+	}
+}
+@media screen and (max-width: 768px) {
+	section.portfolios {
+		width: 90vw;
+	}
+	article.portfolio {
+		width: 80vw;
+	}
 }

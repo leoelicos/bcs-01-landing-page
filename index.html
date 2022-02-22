@@ -14,13 +14,13 @@
 
 	<body>
 		<!-- header -->
-
+		<div id="topofpage"></div>
 		<header>
 			<img src="./assets/images/LW.svg" alt="" />
 			<nav>
 				<ul>
-					<li><a href="https://leoelicos.github.io/bcs-01-landing-page/" active>Home</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#topofpage" active>Home</a></li>
+					<li><a href="#portfolios">Portfolio</a></li>
 					<li><a href="#" id="button">Contact Now</a></li>
 				</ul>
 			</nav>
@@ -38,27 +38,35 @@
 			</section>
 
 			<!-- Portfolio section -->
-			<div id="portfolio" class="portfolio-of-work">
-				<h3>Portfolio of Work</h3>
-				<div class="portfolios">
-					<div class="portfolio">
-						<div class="portfolio-header">Project 1</div>
-						<div class="portfolio-text">Project 1 is written in HTML</div>
-						<div class="portfolio-image"><img src="https://picsum.photos/200" alt="image of HTML work" /></div>
-					</div>
-					<div class="portfolio">
-						<div class="portfolio-header">Project 2</div>
-						<div class="portfolio-text">Project 2 is written in CSS</div>
-						<div class="portfolio-image"><img src="https://picsum.photos/200" alt="image of HTML work" /></div>
-					</div>
-					<div class="portfolio">
-						<div class="portfolio-header">Project 3</div>
-						<div class="portfolio-text">Project 3 is written in Javascript</div>
-						<div class="portfolio-image"><img src="https://picsum.photos/200" alt="image of HTML work" /></div>
-					</div>
-				</div>
-			</div>
+			<h3 class="portfolios-header">Portfolio</h3>
 
+			<section class="portfolios" id="portfolios">
+				<!-- Landing Page -->
+				<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-01-landing-page/">
+					<h3 class="portfolio-header">Landing Page</h3>
+					<p class="portfolio-text">Designer Home Page</p>
+					<img class="portfolio-image" src="./assets/images/landing-page.jpg" alt="image of a landing page" />
+				</a>
+
+				<!-- Code Refactor -->
+				<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-01-code-refactor/">
+					<h3 class="portfolio-header">Code Refactor</h3>
+					<p class="portfolio-text">Accessiblility Driven Codebase</p>
+					<img class="portfolio-image" src="./assets/images/screenshot-code-refactor.png" alt="image of an accessibility-driven page" />
+				</a>
+
+				<!-- CSS Snippet Cheat Sheet -->
+				<a class="portfolio" target="_blank" href="https://leoelicos.github.io/bcs-02-css-snippet-cheat-sheet/">
+					<h3 class="portfolio-header">CSS Snippet Cheat Sheet</h3>
+					<p class="portfolio-text">Responsive Design</p>
+					<img class="portfolio-image" src="./assets/images/screenshot-css-snippet-cheat-sheet.jpg" alt="image of HTML work" />
+				</a>
+
+				<!-- Future projects -->
+				<h3 class="portfolios-header">
+					<sub><em>More projects coming soon</em></sub>
+				</h3>
+			</section>
 			<!-- Modal section -->
 
 			<section class="bg-modal">
