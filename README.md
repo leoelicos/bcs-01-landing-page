@@ -17,11 +17,15 @@ No installation is required. The application works on Google Chrome browsers.
 
 ## Usage
 
-To access the app, click on [CSS Snippet Cheatsheet](https://leoelicos.github.io/bcs-01-landing-page/) on GitHub Pages.
+To access the app, click on [Landing Page](https://leoelicos.github.io/bcs-01-landing-page/) on GitHub Pages.
 
 Screenshot:
 
-![Images](./assets/images/screenshot-css-snippet-cheatsheet.jpg)
+Landing Page
+![Images](./assets/images/landing-page.jpg)
+
+Popup Modal
+![Images](./assets/images/landing-page-popup-modal.jpg)
 
 ## Credits
 
